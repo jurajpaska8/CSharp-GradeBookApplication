@@ -30,7 +30,7 @@ namespace GradeBook.GradeBooks
             grades.Sort();
 
             char g = 'A';
-            for (int i = 1; i < gradeGroupSize; i++, g++)
+            for (int i = groupsCount - 1; i > 0; i--, g++)
             {
                 if (averageGrade >= grades[i * gradeGroupSize])
                 {
